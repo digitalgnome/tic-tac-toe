@@ -379,7 +379,7 @@ $('input[name="reset"]').click(function(event) {
 });
 
 $('input[name="code"]').click(function() {
-  window.location.href = "https://github.com/digitalgnome/tic-tac-toe";
+  window.open("https://github.com/digitalgnome/tic-tac-toe", '_self');
 });
 
 })(jQuery);

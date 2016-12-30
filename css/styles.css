@@ -1,0 +1,238 @@
+/* Tic Tac Toe Stylesheet */
+
+/* Import google Inconsolata font */
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('../fonts/Inconsolata-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+html, body {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  color: #C8FFFE;
+  font-family: 'Inconsolata', monospace;
+  font-size: 250%;
+  letter-spacing: 0.13em;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 1px #9CF7FF;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+table#outer-table {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+table#middle-table {
+  width: 100%;
+}
+
+table#middle-table tr:first-child {
+  color: #FFF;
+}
+
+table#middle-table td#tic-tac-toe {
+  background: #000;
+  text-align: center;
+  width: 100%;
+}
+
+table#middle-table td#board {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+td {
+  color: #000;
+  font-size: 200%;
+  width: 33.33333333%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table#inner-table {
+  background-color: #DCF4F4;
+  border-radius: 10px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+table#inner-table td {
+  cursor: pointer;
+  opacity: 0;
+}
+
+table#inner-table td:hover {
+  background-color: #D8FFFF;
+}
+
+td#one:hover {
+  border-top-left-radius: 10px;
+}
+
+td#three:hover {
+  border-top-right-radius: 10px;
+}
+
+td#seven:hover {
+  border-bottom-left-radius: 10px;
+}
+
+td#nine:hover {
+  border-bottom-right-radius: 10px;
+}
+
+td.horizontal {
+  border: solid #000;
+  border-width: 2px 0;
+}
+
+td.vertical {
+  border: solid #000;
+  border-width: 0 2px;
+
+}
+
+td.hort-vert {
+  border: solid #000;
+  border-width: 2px;
+}
+
+/* button styles */
+p#button {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+input[type="button"] {
+  background-color: #CCEAFF;
+  border: 2px solid #02B0DB;
+  border-radius: 4px;
+  color: #150AA9;
+  cursor: pointer;
+  font-family: 'Inconsolata', monospace;
+  font-size: 105%;
+  font-weight: bold;
+  height: 30px;
+  letter-spacing: 0.05em;
+  line-height: 110%;
+  margin: 0;
+  padding: 0 0.5%;
+  text-align: center;
+  width: 70px;
+}
+
+input[type="button"]:hover {
+  background-color: #00f;
+  border: 2px solid #00DEFF;
+  color: #fff;
+}
+
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+div#modal {
+  background-color: rgba(0, 0, 0, 0.65);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #f9f9f9;
+  font-family: 'Inconsolata', monospace;
+  font-size: 400%;
+  max-height: 100%;
+  left: 15%;
+  line-height: 100%;
+  margin: 12% auto;
+  padding: 5%;
+  position: absolute;
+  top: -800px;
+  max-width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 100;
+}
+
+@media screen and (max-width: 1350px) {
+  h1 {
+    font-size: 200%;
+  }
+
+  div#modal {
+    left: 12%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  h1 {
+    font-size: 200%;
+  }
+
+  div#modal {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  h1 {
+    font-size: 150%;
+  }
+
+  div#modal {
+    font-size: 250%;
+    left: 20%;
+    margin: 15% auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  table#outer-table {
+    margin: 2% auto;
+    width: 96%;
+  }
+
+  div#modal {
+    font-size: 250%;
+    left: 1.5%;
+    line-height: 300%;
+    margin: 30% auto;
+    width: 96%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  div#modal {
+    border-radius: 5px;
+    font-size: 300%;
+    margin: 40% auto;
+    padding: 0;
+    width: 96%;
+  }
+}

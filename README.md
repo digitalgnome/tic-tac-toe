@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# [Tic-Tac-Toe](https://github.com/digitalgnome/tic-tac-toe)
 
 This is some Tic-Tac-Toe Primer Code for AshlandJS Meetup.  Currently, the game is incomplete, i.e., the game's logic lacks offensive capabilities, and only has defensive blocking code.
 

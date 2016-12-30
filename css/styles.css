@@ -175,6 +175,22 @@ div#modal {
   z-index: 100;
 }
 
+#repo {
+  color: #9F9F9F;
+  display: block;
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+#repo:hover, #repo:focus {
+  color: #FFF;
+  text-decoration: underline;
+}
+
+/* Reponsive Media Breakpoints */
 @media screen and (max-width: 1350px) {
   h1 {
     font-size: 200%;

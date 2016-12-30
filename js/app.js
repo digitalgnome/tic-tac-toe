@@ -358,16 +358,6 @@
     console.log('keyArr =', Object.keys(locObj));
   });
 
-  $('input[name="reset"]').click(function(event) {
-    event.preventDefault();
-    $(tdId).html('&nbsp;');
-    $(tdId).removeClass('not-active');
-    value = 'X';
-    keyArr = [];
-    locObj = {};
-    $('#modal').animate({"top": "-1000px"}, 'slow');
-  });
-
 $(tdId).hover(
   function() {
     $(this).css({"opacity": 1});
@@ -376,5 +366,20 @@ $(tdId).hover(
     $(this).css({"opacity": 0});
   }
 );
+
+// Button controls
+$('input[name="reset"]').click(function(event) {
+  event.preventDefault();
+  $(tdId).html('&nbsp;');
+  $(tdId).removeClass('not-active');
+  value = 'X';
+  keyArr = [];
+  locObj = {};
+  $('#modal').animate({"top": "-1000px"}, 'slow');
+});
+
+$('input[name="code"]').click(function() {
+  window.open("https://github.com/digitalgnome/tic-tac-toe", "_blank");
+});
 
 })(jQuery);
